@@ -33,7 +33,6 @@ const useStyles = makeStyles(() => ({
 }));
 
 const CuttingSet = ({ handleSteelLength, handleSubmit, length, loading }) => {
-  console.log(loading);
   const classes = useStyles();
 
   return (

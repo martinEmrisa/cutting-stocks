@@ -85,12 +85,12 @@ function App({}) {
         }
       }
 
-      for (var i = 0; i < choices.length; i++) {
+      for (var k = 0; k < choices.length; k++) {
         // Copy choices
         var newChoices = choices.slice();
-        // Cut out the i'th element and add to the current combination
-        var newCombination = currentCombination.concat(newChoices.splice(i, 1));
-        var newRemainingSum = remainingSum - choices[i];
+        // Cut out the k'th element and add to the current combination
+        var newCombination = currentCombination.concat(newChoices.splice(k, 1));
+        var newRemainingSum = remainingSum - choices[k];
         getCombinationsLessThan(newCombination, newChoices, newRemainingSum);
       }
     }

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { makeStyles, Grid, IconButton } from '@material-ui/core';
 import StockHeader from './StockHeader';
 import StockItem from './StockItem';
