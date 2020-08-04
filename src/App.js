@@ -67,13 +67,13 @@ function App({}) {
         currentCombination.sort(); // Sort all combinations so comparison can be made sequentially
         var uniquePermutation = true;
         for (var i = 0; i < combinations.length; i++) {
-          if (currentCombination.length == combinations[i].length) {
+          if (currentCombination.length === combinations[i].length) {
             for (
               var j = 0;
-              currentCombination[j] == combinations[i][j] && j < combinations[i].length;
+              currentCombination[j] === combinations[i][j] && j < combinations[i].length;
               j++
             ); // Pass
-            if (j == currentCombination.length) {
+            if (j === currentCombination.length) {
               // For loop got all the way through combinations[i], so currentCombination = combinations[i]
               uniquePermutation = false;
               break;
